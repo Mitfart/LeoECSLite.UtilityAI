@@ -2,7 +2,7 @@
 using Leopotam.EcsLite;
 
 namespace LeoECSLite.UtilityAI.Runtime {
-  public interface IEcsDecision : IDecision {
+  public interface IEcsAIAction : IAIAction {
     void Perform(int e, EcsWorld world);
   }
 }

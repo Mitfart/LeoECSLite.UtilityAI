@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace LeoECSLite.UtilityAI {
+namespace LeoECSLite.UtilityAI.Test {
   public struct TestAIComp {
-    public List<SimpleLogEcsDecision> Decisions;
+    public List<SimpleLogEcsAIAction> Decisions;
     public TestEcsAIBrain             TestEcsAIBrain;
   }
 }

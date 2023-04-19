@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Leopotam.EcsLite;
 
-namespace LeoECSLite.UtilityAI {
+namespace LeoECSLite.UtilityAI.Test {
   public class TestAISys : IEcsRunSystem {
     public void Run(IEcsSystems systems) {
       EcsWorld            world  = systems.GetWorld();
@@ -14,7 +14,7 @@ namespace LeoECSLite.UtilityAI {
         ai.TestEcsAIBrain ??= new TestEcsAIBrain();
 
         if (ai.Decisions is not { Count: > 0 }) {
-          ai.Decisions = new List<SimpleLogEcsDecision>() {
+          ai.Decisions = new List<SimpleLogEcsAIAction>() {
             new(),
             new(),
             new(),

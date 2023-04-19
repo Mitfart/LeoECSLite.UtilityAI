@@ -1,14 +1,13 @@
 ﻿using LeoECSLite.UtilityAI.AICortex;
+using LeoECSLite.UtilityAI.AICortex.CortexUtils;
 using LeoECSLite.UtilityAI.Runtime;
 
-namespace LeoECSLite.UtilityAI {
+namespace LeoECSLite.UtilityAI.Test {
   public sealed class TestEcsAIBrain : EcsAIBrain {
-    protected override Cortex CreateCortex() {
-      return new Cortex {
-        new() {
-          { dec => dec is IEcsDecision, Has<TestAIComp>() ? 30 : -30, "TEST" },
-        }
-      };
-    }
+    protected override Cortex Cortex { get; } = new() {
+      new Conclusions {
+        { action => action is IEcsAIAction, EcsAIInput.Has<TestAIComp>, Score.AsIs, "Test log" },
+      }
+    };
   }
 }
