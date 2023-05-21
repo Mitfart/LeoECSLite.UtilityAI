@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using LeoECSLite.UtilityAI.AICortex;
+using LeoECSLite.UtilityAI.UtilityAI;
 using Leopotam.EcsLite;
 
-namespace LeoECSLite.UtilityAI.Runtime {
+namespace LeoECSLite.UtilityAI {
   public abstract class EcsAIBrain : Brain {
     public void RunFor(int e, EcsWorld world, IEnumerable<IAIAction> decisions) {
       EcsAIInput.Set(e, world);

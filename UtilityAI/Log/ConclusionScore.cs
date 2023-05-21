@@ -1,4 +1,4 @@
-﻿namespace LeoECSLite.UtilityAI.AICortex {
+﻿namespace LeoECSLite.UtilityAI.UtilityAI.Log {
   public readonly struct ConclusionScore {
     public string Name  { get; }
     public double Score { get; }
@@ -8,8 +8,6 @@
       Score = score;
     }
 
-    public override string ToString() {
-      return $"{Name} -> \t\t\t {(Score >= 0 ? "+" : " ")}{Score}";
-    }
+    public override string ToString() => $"{Name} -> \t\t\t {(Score >= 0 ? "+" : " ")}{Score}";
   }
 }

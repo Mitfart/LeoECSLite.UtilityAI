@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LeoECSLite.UtilityAI.AICortex.Extentions.IEnumerable {
+namespace LeoECSLite.UtilityAI.UtilityAI.Extentions.IEnumerable {
   public static class FindMaxExt {
     public static T FindMax<T>(this IEnumerable<T> enumerable, Func<T, double> getValue) {
       double maxValue  = double.MinValue;

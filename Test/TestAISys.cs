@@ -13,14 +13,13 @@ namespace LeoECSLite.UtilityAI.Test {
 
         ai.TestEcsAIBrain ??= new TestEcsAIBrain();
 
-        if (ai.Decisions is not { Count: > 0 }) {
-          ai.Decisions = new List<SimpleLogEcsAIAction>() {
+        if (ai.Decisions is not { Count: > 0 })
+          ai.Decisions = new List<SimpleLogEcsAIAction> {
             new(),
             new(),
             new(),
-            new(),
+            new()
           };
-        }
 
         ai.TestEcsAIBrain.RunFor(e, world, ai.Decisions);
       }

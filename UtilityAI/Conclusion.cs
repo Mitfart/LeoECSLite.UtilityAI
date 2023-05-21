@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeoECSLite.UtilityAI.AICortex {
+namespace LeoECSLite.UtilityAI.UtilityAI {
   public readonly struct Conclusion {
     private readonly Func<IAIAction, bool> _appliesTo;
     private readonly Func<double>          _input;

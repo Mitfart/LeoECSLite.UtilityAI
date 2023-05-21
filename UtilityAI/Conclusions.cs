@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using LeoECSLite.UtilityAI.AICortex.Log;
+using LeoECSLite.UtilityAI.UtilityAI.Log;
 
-namespace LeoECSLite.UtilityAI.AICortex {
+namespace LeoECSLite.UtilityAI.UtilityAI {
   public class Conclusions : List<Conclusion> {
     public void Add(
       Func<IAIAction, bool> appliesTo,
@@ -23,12 +23,11 @@ namespace LeoECSLite.UtilityAI.AICortex {
 
 
 
-    public DecisionScore Score(IAIAction action) {
-      return new DecisionScore(
+    public DecisionScore Score(IAIAction action)
+      => new DecisionScore(
         action,
         CalcScoreFor(action)
       );
-    }
 
     private double CalcScoreFor(IAIAction action) {
       var scores = (

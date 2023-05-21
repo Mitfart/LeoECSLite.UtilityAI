@@ -1,3 +1,3 @@
-﻿namespace LeoECSLite.UtilityAI.AICortex {
+﻿namespace LeoECSLite.UtilityAI.UtilityAI {
   public interface IAIAction { }
 }

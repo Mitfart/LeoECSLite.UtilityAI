@@ -1,5 +1,4 @@
-﻿using LeoECSLite.UtilityAI.Runtime;
-using Leopotam.EcsLite;
+﻿using Leopotam.EcsLite;
 using UnityEngine;
 
 namespace LeoECSLite.UtilityAI.Test {

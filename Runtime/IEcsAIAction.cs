@@ -1,7 +1,7 @@
-﻿using LeoECSLite.UtilityAI.AICortex;
+﻿using LeoECSLite.UtilityAI.UtilityAI;
 using Leopotam.EcsLite;
 
-namespace LeoECSLite.UtilityAI.Runtime {
+namespace LeoECSLite.UtilityAI {
   public interface IEcsAIAction : IAIAction {
     void Perform(int e, EcsWorld world);
   }
